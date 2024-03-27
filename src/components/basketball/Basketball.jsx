@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import style from './Basketball.module.css';
 import { formatBasketballNumber } from '../../utils/formatBasketballNumber';
@@ -6,15 +5,6 @@ import { formatBasketballNumber } from '../../utils/formatBasketballNumber';
 export function Basketball() {
     const [score1, setScore1] = useState(0);
     const [score2, setScore2] = useState(0);
-
-function formatBasketballNumber(number, minSize) {
-    return (number + '').padStart(minSize,'0');
-}
-
-console.log(formatBasketballNumber(10, 3));
-console.log(formatBasketballNumber(100, 4));
-console.log(formatBasketballNumber(1000, 5));
-console.log(formatBasketballNumber(10000, 6));
 
     return (
         <div className={style.basketball}>
