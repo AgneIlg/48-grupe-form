@@ -3,8 +3,6 @@ import { useState } from 'react';
 import style from './List.module.css';
 import { Link } from 'react-router-dom';
 
-
-
 export function VegyItem({ data }) {
     const { title, price, unit, href } = data;
     const minVegetablesAmount = 0;
@@ -23,8 +21,6 @@ export function VegyItem({ data }) {
         }
     }
 
-    
-
     return (
         <li className={style.vegy}>
             <span className={style.vegyTitle}>{title} ({price}&euro;/{unit})</span>
@@ -34,7 +30,6 @@ export function VegyItem({ data }) {
                 <button onClick={handleCountPlus} className={style.btn}>+</button>
             </div>
             <Link to={'/vegetables/' + href}>Read more</Link>
-            
         </li>
     );
 }

@@ -3,7 +3,7 @@ import { VegyItem } from './VegyItem';
 
 export function List() {
     const data = [
-        { title: 'Bulvės', price: 1, unit: 'kg', href: 'bulvės' },
+        { title: 'Bulvės', price: 1, unit: 'kg', href: 'bulves' },
         { title: 'Morkos', price: 0.3, unit: 'kg', href: 'morkos' },
         { title: 'Svogūnai', price: 0.4, unit: 'kg', href: 'svogunai' },
         { title: 'Kopūstas', price: 0.7, unit: 'vnt', href: 'kopustas' },
